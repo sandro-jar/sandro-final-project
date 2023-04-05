@@ -4,7 +4,1434 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <meta name="description" content="art collection" />
+    <meta name="keywords" content="NFT, ART, Collection nft, art-collection," />
+    <meta property="og:title" content=" NFT collection market" />
+    <meta
+      property="og:description"
+      content="NFT ART Collection nft art-collection"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.businessinsider.com%2Fpersonal-finance%2Fnft-meaning&psig=AOvVaw2G0hGClAwzn-IOXGc0ZC12&ust=1680768658357000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODWlK6lkv4CFQAAAAAdAAAAABAD"
+    />
+
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Collections</title>
   </head>
-  <body></body>
+  <body class="container collection-grid">
+    <nav>
+      <div class="nav-collection">
+        <div class="logo">
+          <a href="index.html"
+            ><svg
+              width="54"
+              height="44"
+              viewBox="0 0 54 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.6666 43.3333C33.4487 43.3333 43 33.7821 43 22C43 10.2179 33.4487 0.666656 21.6666 0.666656C9.88457 0.666656 0.333313 10.2179 0.333313 22C0.333313 33.7821 9.88457 43.3333 21.6666 43.3333ZM21.6667 42.2667C31.0923 42.2667 38.7334 34.6257 38.7334 25.2C38.7334 15.7743 31.0923 8.13333 21.6667 8.13333C12.241 8.13333 4.60002 15.7743 4.60002 25.2C4.60002 34.6257 12.241 42.2667 21.6667 42.2667Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M43 22C48.891 22 53.6666 26.7757 53.6666 32.6667C53.6666 38.5577 48.891 43.3334 43 43.3334C37.1089 43.3334 32.3333 38.5577 32.3333 32.6667C32.3333 26.7757 37.1089 22 43 22ZM43 22.5333C47.7128 22.5333 51.5333 26.3539 51.5333 31.0667C51.5333 35.7795 47.7128 39.6 43 39.6C38.2872 39.6 34.4667 35.7795 34.4667 31.0667C34.4667 26.3539 38.2872 22.5333 43 22.5333Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="collection-links-burger">
+          <div class="burger-img img-br">
+            <img
+              class="burger-img"
+              src="static/img/collection-png/Hamburger_icon.svg.png"
+              alt=""
+            />
+          </div>
+          <div class="links-1">
+            <h2>Marketplace</h2>
+            <ul>
+              <li class="active-class">
+                <a href=""
+                  ><svg
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M0 10C0 8.89543 0.895431 8 2 8H18C19.1046 8 20 8.89543 20 10V14C20 16.2091 18.2091 18 16 18H4C1.79086 18 0 16.2091 0 14V10Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M2 6C2 4.89543 2.89543 4 4 4H16C17.1046 4 18 4.89543 18 6V8H2V6Z"
+                      fill="white"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M4 2C4 0.895431 4.89543 0 6 0H14C15.1046 0 16 0.895431 16 2V4H4V2Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.25 11C7.25 10.5858 7.58579 10.25 8 10.25H12C12.4142 10.25 12.75 10.5858 12.75 11C12.75 11.4142 12.4142 11.75 12 11.75H8C7.58579 11.75 7.25 11.4142 7.25 11Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Collections</a
+                >
+              </li>
+              <li>
+                <a href="static/routes/market.html">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.82159 0.130726C7.11758 0.308319 7.21355 0.692232 7.03596 0.988219L4.53596 5.15489C4.35837 5.45087 3.97446 5.54685 3.67847 5.36926C3.38248 5.19167 3.2865 4.80775 3.46409 4.51177L5.96409 0.345099C6.14169 0.0491119 6.5256 -0.0468663 6.82159 0.130726Z"
+                      fill="#EEEEEE"
+                    />
+                    <path
+                      opacity="0.4"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.3216 5.36926C14.0256 5.54685 13.6417 5.45087 13.4641 5.15489L10.9641 0.988219C10.7865 0.692231 10.8825 0.308319 11.1785 0.130726C11.4745 -0.0468664 11.8584 0.0491118 12.036 0.345099L14.536 4.51177C14.7136 4.80775 14.6176 5.19167 14.3216 5.36926Z"
+                      fill="#EEEEEE"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M15.9017 14.6733C15.5851 16.2221 14.2338 17.3333 12.6669 17.3333H5.33317C3.7662 17.3333 2.41491 16.2221 2.09839 14.6733L0.735955 8.00666C0.313303 5.93854 1.87838 4 3.97074 4L14.0293 4C16.1217 4 17.6867 5.93853 17.2641 8.00666L15.9017 14.6733Z"
+                      fill="#EEEEEE"
+                    />
+                    <path
+                      d="M14.0293 4H3.97074C2.10783 4 0.662906 5.53668 0.666694 7.33333H17.3333C17.3371 5.53668 15.8922 4 14.0293 4Z"
+                      fill="#EEEEEE"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.125 12.3333C12.125 12.6785 11.8452 12.9583 11.5 12.9583L6.5 12.9583C6.15482 12.9583 5.875 12.6785 5.875 12.3333C5.875 11.9881 6.15482 11.7083 6.5 11.7083L11.5 11.7083C11.8452 11.7083 12.125 11.9882 12.125 12.3333Z"
+                      fill="#EEEEEE"
+                    />
+                  </svg>
+                  Market</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M17.3334 14V4.80105C17.3334 4.29474 17.1032 3.81589 16.7078 3.4996L14.0797 1.39711C13.4887 0.924277 12.7543 0.666675 11.9974 0.666674L6.00263 0.666664C5.24572 0.666664 4.51135 0.924268 3.9203 1.39711L1.29219 3.4996C0.896836 3.81589 0.666687 4.29474 0.666687 4.80105V14C0.666687 15.841 2.15907 17.3333 4.00002 17.3333H14C15.841 17.3333 17.3334 15.841 17.3334 14Z"
+                      fill="#EEEEEE"
+                    />
+                    <path d="M6.5 4H11.5V9L9 7.33333L6.5 9V4Z" fill="#EEEEEE" />
+                    <path
+                      d="M11.9974 0.666674L6.00258 0.666664C5.24567 0.666664 4.5113 0.924268 3.92026 1.39711L1.29215 3.4996C1.11819 3.63877 0.976221 3.8094 0.871765 4H17.1282C17.0237 3.8094 16.8818 3.63876 16.7078 3.4996L14.0797 1.39711C13.4886 0.924277 12.7543 0.666675 11.9974 0.666674Z"
+                      fill="#EEEEEE"
+                    />
+                  </svg>
+                  Mystery Boxes</a
+                >
+              </li>
+            </ul>
+            <div class="profile">
+              <h2>PROFILE</h2>
+              <ul>
+                <li>Wallet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="head">
+          <div>
+            <form>
+              <button type="submit">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="8.80549"
+                    cy="8.3055"
+                    r="7.49047"
+                    stroke="#BBBBBB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.0153 13.9043L16.9519 16.8333"
+                    stroke="#BBBBBB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <input type="text" placeholder="Search" />
+            </form>
+            <div class="reg-button">
+              <a href="static/routes/signup.html">sign up</a>
+            </div>
+            <div class="dark-mode-button">
+              <button class="set-nav">
+                <svg
+                  class="set-nav"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.8067 6.12358L18.1842 5.04349C17.6577 4.12957 16.4907 3.81429 15.5755 4.33869V4.33869C15.1399 4.59531 14.6201 4.66812 14.1307 4.54106C13.6413 4.41399 13.2226 4.09749 12.9668 3.66134C12.8023 3.38412 12.7139 3.06836 12.7105 2.74601V2.74601C12.7254 2.22919 12.5304 1.72837 12.17 1.35764C11.8096 0.986906 11.3145 0.777833 10.7975 0.778046H9.5435C9.03697 0.77804 8.55131 0.979884 8.194 1.33891C7.83669 1.69795 7.63717 2.18456 7.63961 2.69109V2.69109C7.6246 3.73689 6.77248 4.57678 5.72657 4.57667C5.40421 4.57332 5.08846 4.48491 4.81123 4.32038V4.32038C3.89606 3.79598 2.72911 4.11126 2.20254 5.02519L1.53435 6.12358C1.00841 7.03636 1.3194 8.20258 2.23 8.73228V8.73228C2.8219 9.07401 3.18653 9.70556 3.18653 10.389C3.18653 11.0725 2.8219 11.704 2.23 12.0458V12.0458C1.32056 12.5719 1.00923 13.7353 1.53435 14.6453V14.6453L2.16593 15.7346C2.41265 16.1798 2.8266 16.5083 3.31619 16.6474C3.80578 16.7866 4.33064 16.7249 4.77462 16.476V16.476C5.21108 16.2213 5.73119 16.1515 6.21934 16.2822C6.70749 16.4128 7.12324 16.733 7.37416 17.1716C7.5387 17.4489 7.62711 17.7646 7.63046 18.087V18.087C7.63046 19.1435 8.48696 20 9.5435 20H10.7975C11.8505 20 12.7055 19.1491 12.7105 18.0961V18.0961C12.7081 17.588 12.9089 17.1 13.2682 16.7407C13.6275 16.3814 14.1155 16.1806 14.6236 16.1831C14.9452 16.1917 15.2596 16.2797 15.5389 16.4394V16.4394C16.4517 16.9653 17.6179 16.6543 18.1476 15.7437V15.7437L18.8067 14.6453C19.0618 14.2075 19.1318 13.686 19.0012 13.1963C18.8706 12.7067 18.5502 12.2893 18.111 12.0366V12.0366C17.6718 11.7839 17.3514 11.3665 17.2208 10.8769C17.0902 10.3873 17.1603 9.86579 17.4154 9.42793C17.5812 9.13831 17.8214 8.89817 18.111 8.73228V8.73228C19.0161 8.20286 19.3264 7.04346 18.8067 6.13274V6.13274V6.12358Z"
+                    stroke="#555555"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="10.1751"
+                    cy="10.389"
+                    r="2.63616"
+                    stroke="#555555"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collection">
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/Rectangle 10.png"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="modal-1" id="modal-1">
+              <div class="modal-content" id="modal-content">
+                <span class="off-span" id="off-span">x</span>
+                <div>
+                  <ul class="modal-ul">
+                    <li>artist</li>
+                    <li>Mike Winkelmann</li>
+                    <li>
+                      <img
+                        class="modal-pic"
+                        src="static/img/collection-png/prof-pic.jpg"
+                        alt="pro-pic"
+                      />
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                  <span> about:</span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorum, reprehenderit suscipit officia autem illo ea dolores
+                  odio. Est saepe voluptatum tempora atque distinctio error
+                  voluptatem necessitatibus? Cum laborum voluptas quisquam.
+                </p>
+                <a href="#">see more go to market</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/Rectangle 10 (3).png"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/Rectangle 10 (1).png"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/Rectangle 10 (2).png"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/5-k.jpg"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <img
+              class="card-img"
+              src="static/img/collection-png/6-k.jpg"
+              alt=""
+            />
+            <div class="text-card-vector">
+              <div class="title-content-card">
+                <div class="class-title">
+                  <h3>
+                    Stong Roots Collection
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                        fill="#0469FF"
+                      />
+                    </svg>
+                  </h3>
+                  <span>By ancestors</span>
+                </div>
+                <div class="card-content">
+                  <span></span>
+                  <p class="card-p">
+                    An ancestor is anyone you descend from. In families, to
+                    descend means to "come from." You descend from your parents,
+                    who descend from their parents, who descend from their
+                    parents, and so on. That chain of parents and children are
+                    your ancestors.
+                  </p>
+                  <span>Release date: Jan, 2022</span>
+                </div>
+
+                <div class="card-price">
+                  <ul>
+                    <li>Total volume:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 88K </span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Floor price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                      <span class="price"> 1.47</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-hover">
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.00005L8 8.00005L1 15"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-content">
+            <div class="main-card-h2-svg-img">
+              <h2>Featured Collection</h2>
+              <h3>
+                All Hallows' Eve Collection
+                <svg
+                  width="16"
+                  height="15"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.3333 7.5L13.7067 5.64L13.9333 3.18L11.5267 2.63333L10.2667 0.5L7.99999 1.47333L5.73332 0.5L4.47332 2.62667L2.06666 3.16667L2.29332 5.63333L0.666656 7.5L2.29332 9.36L2.06666 11.8267L4.47332 12.3733L5.73332 14.5L7.99999 13.52L10.2667 14.4933L11.5267 12.3667L13.9333 11.82L13.7067 9.36L15.3333 7.5ZM6.25332 10.1733L4.66666 8.57333C4.40666 8.31333 4.40666 7.89333 4.66666 7.63333L4.71332 7.58667C4.97332 7.32667 5.39999 7.32667 5.65999 7.58667L6.73332 8.66667L10.1667 5.22667C10.4267 4.96667 10.8533 4.96667 11.1133 5.22667L11.16 5.27333C11.42 5.53333 11.42 5.95333 11.16 6.21333L7.21332 10.1733C6.93999 10.4333 6.51999 10.4333 6.25332 10.1733Z"
+                    fill="#0469FF"
+                  />
+                </svg>
+              </h3>
+              <img
+                class="menu-img-1"
+                src="static/img/collection-png/Rectangle 5.png"
+                alt=""
+              />
+              <div class="featured-collection">
+                <ul>
+                  <li>Total volume</li>
+                  <li>
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.4"
+                        d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                        fill="#333333"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                    <span class="price">38K</span>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Floor price</li>
+                  <li>
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.4"
+                        d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                        fill="#333333"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                    <span class="price">1.82</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-wrapper">
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/Rect-7.png" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/po-12.jpg" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/Rectangle 8.png" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/head-p.jpg" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/Rectangle 7.png" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="featured-collection-card">
+                <img src="static/img/collection-png/MO-CA-6.jpg" alt="" />
+                <div>
+                  <h2>Teenage Wizard</h2>
+                  <h3>All Hallows' Eve Collection</h3>
+                  <ul class="featured-collection-card-description">
+                    <li>Price:</li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M5.75 8.08333L9.725 6.31667C9.9 6.24167 10.1 6.24167 10.2667 6.31667L14.25 8.08333C14.6 8.24167 14.925 7.81667 14.6833 7.51667L10.5167 2.425C10.2333 2.075 9.76666 2.075 9.48333 2.425L5.31666 7.51667C5.075 7.81667 5.4 8.24167 5.75 8.08333Z"
+                          fill="#333333"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M5.74999 12.9167L9.73332 14.6833C9.90832 14.7583 10.1083 14.7583 10.275 14.6833L14.2583 12.9167C14.6083 12.7583 14.9333 13.1833 14.6917 13.4833L10.525 18.575C10.2417 18.925 9.77499 18.925 9.49165 18.575L5.32499 13.4833C5.07499 13.1833 5.39166 12.7583 5.74999 12.9167Z"
+                          fill="#333333"
+                        />
+                        <path
+                          d="M9.81665 8.40833L6.37499 10.125C6.06665 10.275 6.06665 10.7167 6.37499 10.8667L9.81665 12.5833C9.93332 12.6417 10.075 12.6417 10.1917 12.5833L13.6333 10.8667C13.9417 10.7167 13.9417 10.275 13.6333 10.125L10.1917 8.40833C10.0667 8.35 9.93332 8.35 9.81665 8.40833Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </li>
+                    <li>1.92</li>
+                  </ul>
+                </div>
+                <div class="see-more-svg">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.00005L8 8.00005L1 15"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div><p>Own a piece of digital history with NFTs.</p></div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="13"
+                  height="22"
+                  viewBox="0 0 13 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.5H17.51"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>Made with ❤️ by Sandro</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="static/app/app.js"></script>
+  </body>
 </html>
