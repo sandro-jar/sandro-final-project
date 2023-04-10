@@ -196,7 +196,8 @@
   max-width: 570px;
   display: flex;
   padding: 24px;
-  transition: 1.3s;
+
+  transition: all 500ms ease;
 }
 .class-title {
   font-family: var(--font-family-SF-Pro-Display-regular);
@@ -245,7 +246,7 @@
   padding: 10px;
   background: linear-gradient(
     90deg,
-    rgba(11, 0, 103, 1) 0%,
+    rgb(11 0 103 / 0%) 0%,
     rgba(11, 51, 147, 1) 17%,
     rgba(2, 0, 66, 1) 29%
   );
@@ -299,6 +300,10 @@
 .featured-collection-card img:hover {
   scale: 1.1;
 }
+.fa-star {
+  width: 20px !important;
+  height: 20px !important ;
+}
 .see-more-svg {
   position: relative;
   cursor: pointer;
@@ -307,7 +312,7 @@
   padding: 16px;
   background: linear-gradient(
     90deg,
-    rgba(11, 0, 103, 1) 0%,
+    rgb(11 0 103 / 0%) 0%,
     rgba(11, 51, 147, 1) 17%,
     rgba(2, 0, 66, 1) 29%
   );
@@ -404,9 +409,22 @@
   cursor: pointer;
 }
 .reg-button {
-  border: 0.5px solid rgba(10, 10, 63, 0.349);
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 1px 1px,
+    rgba(45, 35, 66, 0.3) 0 1px 1px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  line-height: 1;
+  transition: box-shadow 0.15s, transform 0.15s;
+  touch-action: manipulation;
+  white-space: nowrap;
   padding: 5px;
   border-radius: 24px;
+  transition: all 500ms ease;
 }
 .reg-button a {
   font-family: var(--font-family-SF-Pro-Display-semibold);
@@ -416,7 +434,7 @@
 }
 
 .reg-button:hover {
-  background-color: rgba(18, 27, 95, 0.418);
+  background-color: rgb(18 27 95 / 83%);
 }
 .reg-button:hover a {
   color: rgb(255, 255, 255);
@@ -576,7 +594,6 @@ form .field {
 }
 
 .modal-ul {
-  padding-right: 100px;
   text-shadow: 2px 2px 4px #000000;
   font-size: var(--font-size-20);
   color: rgb(255, 255, 255);
@@ -603,7 +620,7 @@ form .field {
 .modal-content {
   font-family: var(--font-family-SF-Pro-Display-regular);
   gap: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  box-shadow: rgba(114, 0, 245, 0) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   z-index: 1 !important;
@@ -612,10 +629,10 @@ form .field {
   position: absolute;
   display: none;
   z-index: 1;
-  background: rgb(176, 227, 252);
+  background: rgb(0, 26, 255);
   background: radial-gradient(
     circle,
-    rgba(176, 227, 252, 1) 0%,
+    rgb(126, 97, 253) 0%,
     rgba(0, 22, 79, 1) 100%
   );
   left: 0%;
@@ -625,6 +642,176 @@ form .field {
   align-items: flex-end;
   border-radius: 24px;
 }
+.box-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+.box-cards-img {
+  cursor: pointer;
+}
+.box-cards-img:hover .open-box-hover {
+  opacity: 1;
+}
+.box-cards-img .open-box-hover:hover {
+  background-color: #1f2350;
+}
+.open-box-hover {
+  cursor: pointer;
+  opacity: 0;
+  color: var(--font-color-nav);
+  border: 00.5px solid rgba(255, 255, 255, 0.253);
+  background-color: rgba(141, 100, 235, 0.178);
+  font-size: var(--font-size-18);
+  font-family: var(--font-family-SF-Pro-Display-Medium);
+  border-radius: 24px;
+  padding: 15px;
+  position: absolute;
+  left: 37%;
+  top: 40%;
+}
+.img-box-conent {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.box-section-h2 {
+  text-align: center;
+  color: #545dc2b0;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding: 150px 0px 150px 0px;
+  background: rgb(0, 99, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0.2, 12222, 93, 0.2) 0%,
+    rgba(190, 199, 255, 0) 69%
+  );
+  border-radius: 50%;
+  font-family: var(--font-family-SF-Pro-Display-bold);
+}
+.p-box-card-content p {
+  font-size: var(--font-size-16);
+  font-family: var(--font-family-SF-Pro-Display-Thin);
+  max-width: 182px;
+  margin-bottom: 20px;
+}
+.unbox-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.open-box-hover:hover.unboxing-cards-wrapper {
+  opacity: 0;
+}
+.unbox-card {
+  display: flex;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: 0.5px solid rgba(238, 238, 238, 1);
+  border-radius: 14px;
+  padding: 14px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unboxing-cards-wrapper {
+  grid-area: cards;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.boxm {
+  display: none;
+}
+.after-act-btn {
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  font-size: var(--font-size-18);
+  border-radius: 24px;
+  color: var(--font-color-nav);
+  font-family: var(--font-family-SF-Pro-Display-semibold);
+  background-color: #36395a8a;
+  position: absolute;
+  top: 50%;
+  padding: 15px 10px 15px 10px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 1px 1px,
+    rgba(45, 35, 66, 0.3) 0 1px 1px -3px, #2c2c3d 0 -3px 0 inset;
+  transition-duration: 1s;
+}
+.after-act-btn:hover {
+  background-color: #36395a;
+}
+.box-page .footer-content {
+  background-color: #1f23500e;
+
+  margin-top: 150px;
+}
+.svg-treasure {
+  width: 150px;
+  height: 150px;
+}
+.box-section {
+  grid-area: bsection;
+}
+.radio-box {
+  position: relative;
+  grid-area: radio;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.radio-box > div:first-child {
+  cursor: pointer;
+  font-size: var(--font-size-18);
+  font-family: var(--font-family-SF-Pro-Display-Medium);
+  color: rgb(71, 112, 8);
+
+  border-radius: 24px;
+  padding: 24px;
+  opacity: 70%;
+  box-shadow: rgb(16 18 26 / 20%) 0px 1px 100px 0.1px;
+}
+.radio-box > div:first-child:hover {
+  box-shadow: rgba(0.2, 12222, 93, 0.2) 0px 1px 100px 0.1px;
+}
+.radio-box div:not(:first-child) {
+  cursor: no-drop;
+  font-size: var(--font-size-18);
+  font-family: var(--font-family-SF-Pro-Display-Medium);
+  color: var(--font-color-nav);
+  background-color: #2c2c3d5e;
+  border-radius: 24px;
+  padding: 24px;
+  opacity: 70%;
+}
+.box-main {
+  padding: 100px 0px 0px 0px;
+  padding: 100px 0px px 0px 0px;
+  justify-items: center;
+  display: grid;
+  grid-template-areas:
+    "radio bsection"
+    "cards cards";
+  justify-content: center;
+  row-gap: 174px;
+  column-gap: 307px;
+}
+.box-page {
+  background-color: #ffffff98;
+}
+.box-img-li-text {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 @media only screen and (max-width: 1829px) {
   .main-card-h2-svg-img {
     background-color: rgb(3 1 51 / 4%);
@@ -671,6 +858,27 @@ form .field {
 }
 
 @media only screen and (max-width: 1410px) {
+  .unboxing-cards-wrapper {
+    grid-area: cards;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .box-main {
+    padding: 100px 0px px 0px 0px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas:
+      "radio"
+      "bsection"
+      "cards";
+    row-gap: 174px;
+    column-gap: 307px;
+  }
   .card-wrapper {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
@@ -800,6 +1008,16 @@ form .field {
   }
 }
 @media only screen and (max-width: 830px) {
+  .unboxing-cards-wrapper {
+    grid-area: cards;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    justify-items: center;
+  }
   .reg-button {
     text-align: center;
     border: 0.5px solid rgba(10, 10, 63, 0.349);
@@ -847,6 +1065,22 @@ form .field {
     grid-template-columns: auto;
     gap: 50px;
   }
+
+  .button-30:focus {
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  }
+
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  .button-30:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
   .card-img {
     width: 52%;
     margin: auto;
@@ -859,6 +1093,7 @@ form .field {
     background-color: rgba(233, 227, 227, 0.062);
     flex-direction: column !important;
     padding-left: 18px;
+    padding-bottom: 12px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -905,6 +1140,20 @@ form .field {
   }
 }
 @media only screen and (max-width: 500px) {
+  .after-act-btn {
+    text-align: center;
+  }
+  .unboxing-cards-wrapper {
+    grid-area: cards;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    justify-items: center;
+  }
+
   .form-login {
     padding: 27px;
   }

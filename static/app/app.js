@@ -61,3 +61,10 @@ const offSpan = document.querySelector("#off-span");
 offSpan.addEventListener("click", () => {
   modalContent.classList.toggle("mshow");
 });
+
+var box = document.querySelector(".box-wrapper");
+var buttonA = document.getElementById("open-box-hover");
+var boxContent = document.querySelector(".unboxing-cards-wrapper");
+buttonA.addEventListener("click", () => {
+  boxContent.classList.toggle("boxm");
+});
